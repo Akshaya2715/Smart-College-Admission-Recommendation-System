@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Cutoff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">@ A2J System</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Calculate Section -->
+    <section class="calculate">
+        <div class="container">
+            <h2>Calculate Your Cutoff</h2>
+            <form id="cutoffForm">
+                <input type="number" id="maths" placeholder="Maths Marks" required>
+                <input type="number" id="physics" placeholder="Physics Marks" required>
+                <input type="number" id="chemistry" placeholder="Chemistry Marks" required>
+                <button type="submit">Calculate Cutoff</button>
+            </form>
+            <div id="result" class="result">
+                <!-- The result will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">College Finder</a></li>
+                    <li><a href="#">Admission Guide</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Have a Question?</h3>
+                <ul>
+                                <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Follow us on</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.youtube.com/account"><i class="fab fa-youtube"></i> YouTube</a>
+                    <a href="https://x.com/i/flow/login?lang=en"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://web.telegram.org/a/"><i class="fab fa-telegram"></i> Telegram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;© 2025 A2J System | All Rights Reserved</p>
+        </div>
+    </footer>   
+
+    <script>
+        document.getElementById("cutoffForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            const maths = parseFloat(document.getElementById("maths").value);
+            const physics = parseFloat(document.getElementById("physics").value);
+            const chemistry = parseFloat(document.getElementById("chemistry").value);
+            
+            if (isNaN(maths) || isNaN(physics) || isNaN(chemistry)) {
+                alert("Please enter valid marks.");
+                return;
+            }
+
+            const cutoff = maths + ((physics + chemistry) / 2);
+            document.getElementById("result").innerHTML = `<h3>Your Cutoff: ${cutoff.toFixed(2)}</h3>`;
+        });
+    </script>
+
+</body>
+</html>

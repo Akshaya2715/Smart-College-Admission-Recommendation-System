@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship List</title>
+     <style>
+ /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* Plain White Background */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fafafa; /* Slightly off-white for soft contrast */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #6a0572; /* Deep Purple */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Scholarship Cards */
+.scholarship {
+    background: #f9f0ff; /* Light purple tint */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.scholarship:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+.title {
+    font-size: 1.6em;
+    color: #6a0572; /* Deep Purple */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Text Blocks */
+.objective, .criteria, .benefits, .apply {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Strong Highlights */
+strong {
+    color: #8e44ad; /* Medium Purple */
+    font-weight: bold;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 35px;
+    position: relative;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Custom Bullet Points */
+ul li::before {
+    content: '⬤'; /* Solid Circle */
+    position: absolute;
+    left: 0;
+    color: #8e44ad; /* Stylish Purple */
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .title {
+        font-size: 1.4em;
+    }
+    
+    ul li {
+        font-size: 1em;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Details of Central Scholarship</h1>
+        <div class="scholarship">
+            <div class="title">National Talent Scholarship – ICAR</div>
+            <div class="objective"><strong>Objective:</strong> To encourage talented students to pursue agriculture and allied sciences education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Must have cleared AIEEA UG examination conducted by ICAR</li>
+                    <li>Should be enrolled in recognized agriculture universities</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹2,000 per month for the full duration of the degree (4 years).</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through ICAR official portal after clearing AIEEA.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Swanath Scholarship Scheme</div>
+            <div class="objective"><strong>Objective:</strong> To provide financial support to orphans, children of COVID-deceased, or martyred armed forces.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Students should be pursuing technical courses approved by AICTE</li>
+                    <li>Family income ≤ ₹8 lakh per annum</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹50,000 per annum for college fees, books, stationeries, and more.</div>
+            <div class="apply"><strong>How to Apply:</strong> Via National Scholarship Portal (NSP).</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">AICTE Pragati Scholarship for Girls</div>
+            <div class="objective"><strong>Objective:</strong> Empowerment of girls through technical education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Female student in 1st year of AICTE-approved college</li>
+                    <li>Family income ≤ ₹8 lakh/annum</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹50,000/year for tuition, books, etc. for 4 years.</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP Portal or AICTE website.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Prime Minister's Scholarship Scheme for Wards of States/UTs Police Personnel</div>
+            <div class="objective"><strong>Objective:</strong> To support higher technical education of police martyrs' children.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Dependent of martyred State/UT Police personnel</li>
+                    <li>Enrolled in professional courses including engineering</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹2,500/month (girls), ₹2,000/month (boys).</div>
+            <div class="apply"><strong>How to Apply:</strong> Through NSP.</div>
+        </div>
+        <div class="scholarship">
+            <div class="title">Post-Matric Scholarships for Students with Disabilities</div>
+            <div class="objective"><strong>Objective:</strong> Promote inclusive education for disabled students.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Disability ≥ 40%</li>
+                    <li>Family income ≤ ₹2.5 lakh</li>
+                    <li>Pursuing post-matric technical/professional courses</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Maintenance allowance up to ₹1,200/month + tuition fees + books.</div>
+            <div class="apply"><strong>How to Apply:</strong> Through NSP.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Scholarship to BC/MBC/DNC Students, Tamil Nadu (State Scheme)</div>
+            <div class="objective"><strong>Objective:</strong> Promote education among backward categories.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Tamil Nadu domicile</li>
+                    <li>Must belong to BC/MBC/DNC</li>
+                    <li>Parental income ≤ ₹2 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Tuition fee waiver and other financial aid.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through Tamil Nadu e-district portal.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Prime Minister's Scholarship Scheme for RPF/RPSF</div>
+            <div class="objective"><strong>Objective:</strong> Financial aid for children of RPF/RPSF personnel.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Dependent of retired/martyred RPF personnel</li>
+                    <li>Must be enrolled in technical/professional courses</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹2,250/month (girls), ₹2,000/month (boys).</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP portal.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Merit cum Means Scholarship for Professional and Technical Courses (Minorities)</div>
+            <div class="objective"><strong>Objective:</strong> Encourage meritorious minority students.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belong to minority community (Muslim, Christian, Sikh, etc.)</li>
+                    <li>Family income ≤ ₹2.5 lakh</li>
+                    <li>Minimum 50% in qualifying exam</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹20,000/year or actual tuition fees. Maintenance ₹1,000/month for hostellers.</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP Portal.</div>
+        </div>
+        <div class="scholarship">
+            <div class="title">Post Matric Scholarships Scheme for Minorities</div>
+            <div class="objective"><strong>Objective:</strong> Help minority students continue post-matric education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Minority students from Class 11 to Ph.D.</li>
+                    <li>Family income ≤ ₹2 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Up to ₹10,000/year tuition fee + maintenance allowance.</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP Portal.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Scholarships for Top Class Education for Students with Disabilities</div>
+            <div class="objective"><strong>Objective:</strong> Promote high-quality education among disabled students.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Disability ≥ 40%</li>
+                    <li>Family income ≤ ₹6 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Up to ₹2 lakh for tuition + ₹3,000/month maintenance + laptop.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply on NSP.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">National Fellowship and Scholarship for Higher Education for ST Students</div>
+            <div class="objective"><strong>Objective:</strong> Enhance participation of ST students in professional education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>ST students enrolled in technical courses</li>
+                    <li>Family income ≤ ₹6 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Tuition fee, maintenance, laptop, and more.</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP Portal.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">National Overseas Scholarship for ST</div>
+            <div class="objective"><strong>Objective:</strong> Financial support to ST students for higher studies abroad.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>ST category, under 35 years</li>
+                    <li>Admission in top 500 world universities</li>
+                    <li>Family income ≤ ₹6 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Tuition, living expense, air travel, contingency.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply on <a href="https://overseas.tribal.gov.in" target="_blank">https://overseas.tribal.gov.in</a>.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Central Sector Scheme of Scholarship for College and University Students (CSSS)</div>
+            <div class="objective"><strong>Objective:</strong> Support meritorious students from economically weaker sections.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>80% marks in 12th standard</li>
+                    <li>Family income ≤ ₹4.5 lakh</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹10,000/year (UG), ₹20,000/year (PG).</div>
+            <div class="apply"><strong>How to Apply:</strong> NSP.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Government of India Scholarship (Generic Term)</div>
+            <div class="objective"><strong>Objective:</strong> Refers to various scholarships under different ministries.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Offered by MHRD, Ministry of Minority Affairs, Social Justice, Tribal Affairs</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Varies by scheme – covers tuition, maintenance, and more.</div>
+            <div class="apply"><strong>How to Apply:</strong> All schemes are listed and applied through the NSP Portal.</div>
+        </div>
+                
+    </div>
+</body>
+</html>

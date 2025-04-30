@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship List</title>
+     <style>
+ /* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff; /* Plain White Background */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fafafa; /* Slightly off-white for soft contrast */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #6a0572; /* Deep Purple */
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Scholarship Cards */
+.scholarship {
+    background: #f9f0ff; /* Light purple tint */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.scholarship:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+.title {
+    font-size: 1.6em;
+    color: #6a0572; /* Deep Purple */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Text Blocks */
+.objective, .criteria, .benefits, .apply {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Strong Highlights */
+strong {
+    color: #8e44ad; /* Medium Purple */
+    font-weight: bold;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 35px;
+    position: relative;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+/* Custom Bullet Points */
+ul li::before {
+    content: '⬤'; /* Solid Circle */
+    position: absolute;
+    left: 0;
+    color: #8e44ad; /* Stylish Purple */
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .title {
+        font-size: 1.4em;
+    }
+    
+    ul li {
+        font-size: 1em;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Details of Central Scholarship</h1>
+        
+        <div class="scholarship">
+            <div class="title">R. I. M. C. Dehradun Scholarship, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> The R. I. M. C. (Rashtriya Indian Military College) Dehradun Scholarship is awarded by the Tamil Nadu government to support students from Tamil Nadu who get admission into RIMC, Dehradun. This scholarship aims to provide financial assistance to meritorious students who aspire to join the Indian Armed Forces through RIMC.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>The student must be a resident of Tamil Nadu.</li>
+                    <li>The student must have secured admission to RIMC, Dehradun.</li>
+                    <li>Academic performance and merit-based selection criteria apply.</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> <ul>
+                <li>The student must be a resident of Tamil Nadu.</li>
+                <li>The student must have secured admission to RIMC, Dehradun.</li>
+                <li>Academic performance and merit-based selection criteria apply.</li>
+            </ul></div>
+            <div class="apply"><strong>How to Apply:</strong>  
+            <ul>
+                <li>Eligible students must submit an application through the Directorate of Collegiate Education, Government of Tamil Nadu.</li>
+                <li>Documents such as admission proof, domicile certificate, and academic records must be provided.</li>
+            </ul></div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Deceased Government Servants Scholarship, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Support for children of government employees who passed away in service.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Child of deceased Tamil Nadu government employee</li>
+                    <li>Enrolled in a recognized institution</li>
+                    <li>Annual family income within government limits</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Covers tuition, books, and educational expenses.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through Directorate of Collegiate Education.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">CENTRAL SECTOR SCHEME OF SCHOLARSHIP (CSSS)</div>
+            <div class="objective"><strong>Objective:</strong> Financial support for meritorious students from economically weaker sections.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>80%+ marks in Class 12</li>
+                    <li>Annual income &lt; ₹4.5 lakhs</li>
+                    <li>Enrolled in UG course</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹10,000 per year for UG; ₹20,000 per year for PG.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply online through the National Scholarship Portal.</div>
+        </div>
+        <div class="scholarship">
+            <div class="title">Scholarship to Son and Daughter of Differently Abled Persons, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Financial assistance for children of differently-abled parents to pursue higher education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Resident of Tamil Nadu</li>
+                    <li>Parent with 40% or more disability</li>
+                    <li>Studying in Class 1–12 or higher education</li>
+                    <li>No income limit</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Covers tuition fees, books, and study materials.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through the District Social Welfare Office with necessary documents.</div>
+        </div>
+    
+        <div class="scholarship">
+            <div class="title">Scholarship for Differently Abled Students from Class 9th Onwards, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Support for differently-abled students to complete their education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Resident of Tamil Nadu</li>
+                    <li>Disability percentage of 40% or more</li>
+                    <li>Studying in Class 9 or above</li>
+                    <li>No income limit</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Covers tuition fees, stipend for higher education.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply at the District Social Welfare Office.</div>
+        </div>
+    
+        <div class="scholarship">
+            <div class="title">Free Education Schemes for BC, MBC & DNC Students, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Encourages higher education among backward communities.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belong to BC, MBC, or DNC category</li>
+                    <li>Pursuing Diploma, UG, or Professional courses</li>
+                    <li>Annual family income &lt; ₹2.00 lakhs</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Full tuition fee waiver, hostel & study material assistance.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through respective educational institutions.</div>
+        </div>
+        <!-- More scholarship entries can be added similarly -->
+        <div class="scholarship">
+            <div class="title">Incentive Scheme for Rural MBC/DNC Girl Students, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Encourages rural girl students from MBC/DNC to complete their education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Girls from MBC/DNC category</li>
+                    <li>Studying in Class 3 to 6 in rural Tamil Nadu</li>
+                    <li>Enrolled in a recognized school</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹500 per year (Class 3-5), ₹1000 per year (Class 6).</div>
+            <div class="apply"><strong>How to Apply:</strong> Through the school headmaster or District Backward Classes and Minority Welfare Office.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Thanthai Periyar Memorial Award, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Award for meritorious BC, MBC, DNC students excelling in Class 12.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belonging to BC, MBC, or DNC</li>
+                    <li>Highest marks in Class 12</li>
+                    <li>Admitted to professional courses in Tamil Nadu</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹10,000 one-time award.</div>
+            <div class="apply"><strong>How to Apply:</strong> Automatic selection based on Class 12 results.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Perarignar Anna Memorial Award, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Encourages higher education for BC, MBC, DNC students.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belonging to BC, MBC, or DNC</li>
+                    <li>Highest marks in Class 12</li>
+                    <li>Admitted to Engineering/Medicine in Tamil Nadu</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹10,000 one-time award.</div>
+            <div class="apply"><strong>How to Apply:</strong> Automatic selection based on board exam results.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Vidyadhan Scholarship Program</div>
+            <div class="objective"><strong>Objective:</strong> Financial support for economically disadvantaged students.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Completed Class 10 with high marks</li>
+                    <li>Family income &lt; ₹2 lakhs</li>
+                    <li>Enrolled in Class 11, 12, or UG courses</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> ₹6,000 per year (Class 11 & 12), ₹10,000 - ₹60,000 per year (UG).</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply online at <a href="https://www.vidyadhan.org/">Vidyadhan Website</a>.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Free Education Schemes for SC/ST Students, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Ensures SC/ST students can pursue higher education without financial burden.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belonging to SC or ST category</li>
+                    <li>Studying Diploma, UG, PG, or professional courses</li>
+                    <li>Annual family income &lt; ₹2.50 lakhs</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Full tuition fee waiver, hostel and book allowances.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply through colleges/universities.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Post-Matric Scholarship for BC/MBC/DNC Students, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Financial aid for students pursuing education after Class 10.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belonging to BC, MBC, or DNC</li>
+                    <li>Annual family income &lt; ₹2 lakhs</li>
+                    <li>Studying in recognized institutions</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Tuition fee waiver, hostel and maintenance allowance.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply online via Tamil Nadu e-Scholarship portal.</div>
+        </div>
+        
+        <div class="scholarship">
+            <div class="title">Post-Matric Scholarship for SC/ST Students, Tamil Nadu</div>
+            <div class="objective"><strong>Objective:</strong> Provides financial assistance for SC/ST students in higher education.</div>
+            <div class="criteria"><strong>Eligibility Criteria:</strong>
+                <ul>
+                    <li>Belonging to SC or ST category</li>
+                    <li>Pursuing post-matric education</li>
+                    <li>Annual family income &lt; ₹2.50 lakhs</li>
+                </ul>
+            </div>
+            <div class="benefits"><strong>Benefits:</strong> Tuition fee reimbursement, monthly maintenance allowance.</div>
+            <div class="apply"><strong>How to Apply:</strong> Apply via National Scholarship Portal or Tamil Nadu e-District portal.</div>
+        </div>
+    
+    </div>
+</body>
+</html>

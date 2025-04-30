@@ -1,0 +1,187 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f6ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f3e7ff, #c8a2ff);
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(45deg, #6a0dad, #a855f7);
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+}
+
+/* Scholarship Section Styling */
+.scholarships {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    max-width: 850px;
+    margin: 50px auto;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.scholarships::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background: rgba(106, 13, 173, 0.08);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.scholarships h1 {
+    font-size: 2.4rem;
+    color: #6a0dad;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Buttons Styling */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #6a0dad, #a855f7);
+    color: white;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.3);
+}
+
+.buttons button:hover {
+    background: linear-gradient(45deg, #5b0c9e, #8b3af2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.4);
+}
+
+.buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Scholarship List Styling */
+.scholarship-list {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.scholarship-list h2 {
+    color: #6a0dad;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #6a0dad;
+    padding-bottom: 5px;
+}
+
+.scholarship-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.scholarship-list li {
+    background: #ece0f8;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-size: 1.1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+.scholarship-list li:hover {
+    background: #d6b3ff;
+    transform: scale(1.02);
+}
+.popup {
+    display: none; /* Ensuring it is hidden initially */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+}
+/* Glassmorphic Popup Content */
+.popup-content {
+background: rgba(255, 255, 255, 0.15);
+border-radius: 12px;
+padding: 25px;
+width: 50%;
+max-width: 600px;
+backdrop-filter: blur(10px);
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+text-align: justify;
+animation: fadeIn 0.5s ease-in-out;
+color: white;
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Close Button (X) */
+.close-btn {
+float: right;
+font-size: 28px;
+font-weight: bold;
+cursor: pointer;
+color: #ffa500;
+}
+
+.close-btn:hover {
+color: #ffcc00;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+from { opacity: 0; transform: scale(0.8); }
+to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+.popup-content {
+width: 80%;
+}
+}
+
+

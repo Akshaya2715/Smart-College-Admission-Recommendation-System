@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Popup</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Popup styles */
+    .popup-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex; /* Show by default */
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .popup-box {
+      background: white;
+      padding: 30px;
+      width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      position: relative;
+      animation: popupShow 0.4s ease;
+    }
+
+    @keyframes popupShow {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .popup-box h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .popup-box input, .popup-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: none;
+      font-size: 15px;
+    }
+
+    .popup-box button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .popup-box button:hover {
+      background-color: #16a085;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #888;
+    }
+
+    .close-btn:hover {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contact Popup -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <h2>Contact Us</h2>
+      <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Type your message here..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      
+    </div>
+  </div>
+
+  <!-- JS to handle close -->
+  <script>
+    const popup = document.getElementById('popup');
+    const closeBtn = document.getElementById('closePopup');
+  
+    closeBtn.addEventListener('click', function () {
+      // Hide popup
+      popup.style.display = 'none';
+  
+      // Redirect to index.html
+      window.location.href = 'index.html';
+    });
+  
+    window.addEventListener('click', function (e) {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+  
+</body>
+</html>

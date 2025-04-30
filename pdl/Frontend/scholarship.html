@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarships</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scholarstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">@ A2J System</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="aboutBtn">About</a></li>
+                <li><a href="index.html" style="color:white; text-decoration:none; font-size: 18px;">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scholarship Section -->
+    <section class="scholarships">
+        <h1 style="
+        background: linear-gradient(to right, #6a0dad, #a855f7); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        font-size: 2.5rem; 
+        font-weight: bold; 
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        display: inline-block;
+    ">
+        Available Scholarships
+    </h1>
+    
+        <div class="buttons">
+            <button onclick="filterScholarships('state')">State Scholarships</button>
+            <button onclick="filterScholarships('central')">Central Scholarships</button>
+        </div>
+       
+        
+  <!-- Popup Modal for About Scholarships -->
+<div id="aboutPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>About Scholarships</h2>
+        <p>
+            Scholarships for engineering students – The cost of pursuing an engineering course from a recognised college/university 
+            generally ranges from ₹8 Lakh to ₹20 Lakh. In government or private colleges, a majority of students find it difficult to 
+            meet the costly expenses of the course. This creates a need for financial assistance for students wherein scholarships for 
+            engineering students play a crucial role in funding their overall education expenses.
+        </p>
+        <p>
+            To support aspiring engineers to pursue their dream education, central and state government, numerous universities, private 
+            organizations, and corporates are offering a plethora of scholarships and fellowships.
+        </p>
+    </div>
+</div>
+        <!-- Scholarship List -->
+        <div id="state" class="scholarship-list">
+            <h2>State Scholarships</h2>
+            <ul>
+                <li>R. I. M. C. Dehradun Scholarship, Tamil Nadu</li>
+                <li>Deceased Government Servants Scholarship, Tamil Nadu</li>
+                <li>CENTRAL SECTOR SCHEME OF SCHOLARSHIP (CSSS)</li>
+                <li>Scholarship to Son and Daughter of Differently Abled Persons, Tamil Nadu</li>
+                <li>Scholarship for Differently Abled Students from Class 9th Onwards, Tamil Nadu</li>
+                <li>Scholarship for Differently Abled Students towards Purchase of Books and Note Books, Tamil Nadu</li>
+                <li>Free Education Schemes for BC, MBC & DNC students, Tamil Nadu</li>
+                <li>Incentive Scheme for Rural MBC/DNC Girl Students, Tamil Nadu</li>
+                <li>Thanthai Periyar Memorial Award, Tamil Nadu</li>
+                <li>Perarignar Anna Memorial Award, Tamil Nadu</li>
+                <li>Vidyadhan Scholarship Program</li>
+                <li>Free Education Schemes for SC / ST students, Tamil Nadu</li>
+                <li>Post Metric Scholarship for BC / MBC/ DNC</li>
+                <li>Post Metric Scholarship for SC/ST</li>
+            </ul>
+            <a href="apply_state.html" id="apply-state" 
+            style="display: inline-block; 
+                   width: 250px; 
+                   padding: 15px; 
+                   margin: 20px auto; 
+                   text-align: center; 
+                   background: linear-gradient(135deg, #ff7eb3, #ff758c); 
+                   color: white; 
+                   font-size: 18px; 
+                   font-weight: bold; 
+                   border-radius: 30px; 
+                   text-decoration: none; 
+                   transition: all 0.3s ease-in-out; 
+                   box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4);"
+            
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(255, 117, 140, 0.6)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 15px rgba(255, 117, 140, 0.4)';"
+        >
+            Description of Scholarship
+        </a>
+        
+        </div>
+        
+          
+        <div id="central" class="scholarship-list">
+            <h2>Central Scholarships</h2>
+            <ul>
+                <li>National Talent Scholarship - ICAR</li>
+                <li>Swanath Scholarship Scheme</li>
+                <li>AICTE Pragati Scholarship for Girls</li>
+                <li>Prime Minister's Scholarship Scheme for Wards of States/UTs Police Personnel</li>
+                <li>Post-Matric Scholarships for Students with Disabilities</li>
+                <li>Scholarship to BC/MBC/DNC Students, Tamil Nadu</li>
+                <li>Prime Minister's Scholarship Scheme for RPF/RPSF</li>
+                <li>Merit cum Means Scholarship for Professional and Technical Courses CS (Minorities)</li>
+                <li>Post Matric Scholarships Scheme for Minorities</li>
+                <li>Scholarships for Top Class Education for Students with Disabilities</li>
+                <li>National Fellowship and Scholarship for Higher Education for ST Students</li>
+                <li>National Overseas Scholarship for ST</li>
+                <li>Central Sector Scheme of Scholarship (CSSS)</li>
+                <li>Government of India Scholarship</li>
+            </ul>
+            
+            <a href="apply_central.html" id="apply-central" 
+            style="display: inline-block; 
+                   width: 250px; 
+                   padding: 15px; 
+                   margin: 20px auto; 
+                   text-align: center; 
+                   background: linear-gradient(135deg, #ff7eb3, #ff758c); 
+                   color: white; 
+                   font-size: 18px; 
+                   font-weight: bold; 
+                   border-radius: 30px; 
+                   text-decoration: none; 
+                   transition: all 0.3s ease-in-out; 
+                   box-shadow: 0 5px 15px rgba(255, 117, 140, 0.4);"
+            
+            onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 8px 20px rgba(255, 117, 140, 0.6)';"
+            onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 5px 15px rgba(255, 117, 140, 0.4)';"
+        >
+            Description of Scholarship
+        </a>
+        
+        </div>
+
+    </section>
+    <!-- JavaScript -->
+    <script>
+        function filterScholarships(category) {
+            document.querySelectorAll('.scholarship-list').forEach(list => {
+                list.style.display = 'none';
+            });
+
+            let selectedList = document.getElementById(category);
+            if (selectedList) {
+                selectedList.style.display = 'block';
+            }
+        }
+        document.getElementById("aboutBtn").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent default link action
+            document.getElementById("aboutPopup").style.display = "flex"; // Show popup
+        });
+    
+        // Close popup when clicking outside the content
+        document.getElementById("aboutPopup").addEventListener("click", function(event) {
+            if (event.target === this) { // Ensuring only background click closes popup
+                closePopup();
+            }
+        });
+    
+        
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+        
+        // Close Popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+        
+         
+    </script>
+</body>
+</html>
